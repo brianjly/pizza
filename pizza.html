@@ -1,0 +1,204 @@
+<html>
+<head>
+  <link href="pizza.css" rel="stylesheet">
+</head>
+
+<body>
+  <center>
+
+
+  <div id="interface">
+
+    <h1 id="header">
+      CSS3 and jQuery Pizza Builder
+    </h1>
+  <div id="pizzacontainer">
+    <div id="panhandle">
+
+    </div>
+
+    <div id="pizzapan">
+      <div id=pizzashadow>
+
+      <div id="pizza">
+        <div id="tomatosauce">
+          <div id="cheese">
+
+
+            <div id="pepperoni-holder">
+              <div class="pepperoni p1"></div>
+              <div class="pepperoni p2"></div>
+              <div class="pepperoni p3"></div>
+              <div class="pepperoni p4"></div>
+              <div class="pepperoni p5"></div>
+              <div class="pepperoni p6"></div>
+              <div class="pepperoni p7"></div>
+
+
+            </div>
+
+            <div id="sausage-holder">
+              <div class="sausage s1"></div>
+              <div class="sausage s2"></div>
+              <div class="sausage s3"></div>
+              <div class="sausage s4"></div>
+              <div class="sausage s5"></div>
+              <div class="sausage s6"></div>
+              <div class="sausage s7"></div>
+              <div class="sausage s8"></div>
+              <div class="sausage s9"></div>
+              <div class="sausage s10"></div>
+
+            </div>
+
+            <div id="mushroom-holder">
+              <div class="mushroom m1"></div>
+              <div class="mushroom m2"></div>
+              <div class="mushroom m3"></div>
+              <div class="mushroom m4"></div>
+              <div class="mushroom m5"></div>
+              <div class="mushroom m6"></div>
+              <div class="mushroom m7"></div>
+              <div class="mushroom m8"></div>
+              <div class="mushroom m9"></div>
+              <div class="mushroom m10"></div>
+
+            </div>
+
+            <div id="olive-holder">
+              <div class="olive o1"></div>
+              <div class="olive o2"></div>
+              <div class="olive o3"></div>
+              <div class="olive o4"></div>
+              <div class="olive o5"></div>
+              <div class="olive o6"></div>
+              <div class="olive o7"></div>
+              <div class="olive o8"></div>
+
+              <div class="olive o9"></div>
+              <div class="olive o10"></div>
+              <div class="olive o11"></div>
+
+
+            </div>
+
+            <div id="pepper-holder">
+              <div class="pepper pe1"></div>
+              <div class="pepper pe2"></div>
+              <div class="pepper pe3"></div>
+              <div class="pepper pe4"></div>
+              <div class="pepper pe5"></div>
+              <div class="pepper pe6"></div>
+              <div class="pepper pe7"></div>
+              <div class="pepper pe8"></div>
+
+              <div class="pepper pe9"></div>
+              <div class="pepper pe10"></div>
+              <div class="pepper pe11"></div>
+
+
+            </div>
+
+        </div>
+      </div>
+    </div>
+    </div>
+  </div>
+</div>
+
+<div id="toggleui">
+
+  <div class="card-container">
+    <div class="card" id="rotate">
+      <div class="front"><h1>ROTATE:<i>YES</i></h1></div>
+      <div class="back"><h1>ROTATE:<i>no</i></h1></div>
+    </div>
+  </div>
+
+  <h1>
+    Toppings
+  </h1>
+
+  <div class="card-container">
+    <div class="card pep">
+      <div class="front"><h1>PEPPERONI:<i>YES</i></h1></div>
+      <div class="back"><h1>PEPPERONI:<i>no</i></h1></div>
+    </div>
+  </div>
+
+  <div class="card-container">
+    <div class="card sau">
+      <div class="front"><h1>SAUSAGE:<i>YES</i></h1></div>
+      <div class="back"><h1>SAUSAGE:<i>no</i></h1></div>
+    </div>
+  </div>
+
+  <div class="card-container">
+    <div class="card mus">
+      <div class="front"><h1>MUSHROOM:<i>YES</i></h1></div>
+      <div class="back"><h1>MUSHROOM:<i>no</i></h1></div>
+    </div>
+  </div>
+
+  <div class="card-container">
+    <div class="card oli">
+      <div class="front"><h1>OLIVES:<i>YES</i></h1></div>
+      <div class="back"><h1>OLIVES:<i>no</i></h1></div>
+    </div>
+  </div>
+
+  <div class="card-container">
+    <div class="card bel">
+      <div class="front"><h1>BELL PEPPER:<i>YES</i></h1></div>
+      <div class="back"><h1>BELL PEPPER:<i>NO</i></h1></div>
+    </div>
+  </div>
+
+</div>
+
+
+</div>
+</center>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+
+<script>
+
+$(document).ready(function(){
+
+  $(".card").click(function(){
+    $(this).toggleClass("flip");
+  });
+
+  $("#rotate").click(function(){
+    $("#pizza").toggleClass("spin");
+  });
+
+  $(".pep").click(function(){
+    $("#pepperoni-holder").toggle();
+  });
+
+  $(".sau").click(function(){
+    $("#sausage-holder").toggle();
+  });
+
+  $(".mus").click(function(){
+    $("#mushroom-holder").toggle();
+  });
+
+  $(".oli").click(function(){
+    $("#olive-holder").toggle();
+  });
+
+  $(".bel").click(function(){
+    $("#pepper-holder").toggle();
+  });
+});
+
+
+</script>
+
+</body>
+
+
+</html>
